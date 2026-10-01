@@ -7,8 +7,35 @@
   <link rel="icon" href="/images/brand-icon.png" />
   <title>Both Worlds Global | BPO & Business Support Solutions</title>
 </head>
+
 <body>
+
+  <!-- Hidden form for Netlify Forms detection -->
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <input type="hidden" name="form-name" value="contact" />
+
+    <input type="text" name="fullName" />
+    <input type="text" name="companyName" />
+    <input type="email" name="email" />
+    <input type="tel" name="phone" />
+
+    <select name="service">
+      <option value="">Select a service</option>
+      <option>Customer Support</option>
+      <option>Administrative Support</option>
+      <option>Sales Support</option>
+      <option>Technical Support</option>
+      <option>Back-Office Operations</option>
+      <option>Custom Staffing Solution</option>
+      <option>Other</option>
+    </select>
+
+    <textarea name="message"></textarea>
+  </form>
+
   <div id="root"></div>
+
   <script type="module" src="/src/main.jsx"></script>
+
 </body>
 </html>
